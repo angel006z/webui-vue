@@ -8,14 +8,16 @@
 
 <script>
   import Header from './components/Header'
-
   import './css/normalize.min.css'
   import './css/charge.css'
   import Footer from './components/Footer'
 
   export default {
     name: 'App',
-    components: {Footer, Header}
+    components: {
+      Footer,
+      Header
+    }
   }
 </script>
 

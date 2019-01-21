@@ -18,7 +18,6 @@
 <style scoped>
   .footer-container {
     width: 100%;
-
   }
 
   .footer-container .footer {
