@@ -6,12 +6,22 @@
       </a>
         <ul class="nav">
           <li><router-link to="/">首页</router-link></li>
-          <li><router-link to="/login">登录</router-link></li>
-          <li><router-link to="/about">关于我们</router-link></li>
+          <li><router-link to="/about-commpany" style="width: 80px;">公司介绍</router-link></li>
+          <li><router-link to="/about-contact-us" style="width: 80px;">关于我们</router-link></li>
         </ul>
       <div class="right">
          <div class="user">
-           您好，欢迎你
+           <div v-if="isLogin===false" class="login-no">
+            <span>
+              <span><router-link to="/login">登录</router-link></span> |
+               <span><a href="">注册</a></span>
+            </span>
+           </div>
+           <div v-else class="login-ok">
+            <span>
+                您好，欢迎你
+            </span>
+           </div>
          </div>
       </div>
     </div>
@@ -21,7 +31,12 @@
 
 <script>
     export default {
-        name: "Header"
+        name: "Header",
+      data:function () {
+        return {
+          isLogin: false
+        }
+      }
     }
 </script>
 

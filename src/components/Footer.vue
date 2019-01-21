@@ -3,7 +3,7 @@
     <div class="footer">
       <div class="text">
         <p>沪ICP备15043293号 | <a href="http://www.panda.tv/news/1101414857/3700943925/3701130188.html" target="_blank">沪网文[2015]0826-226号</a> | <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010802001046"><img src="/img/d0289dc0a46fc5b15b3363ffa78cf6c7.png">沪公网安备 31010802001046号</a></p>
-        <p>上海熊猫互娱文化有限公司 | 地址: 上海闸北区灵石路695号3号楼1804室 | 举报电话&amp;客服热线: 10108666</p>
+        <p>上海黑壳信息科技有限公司</p>
       </div>
     </div>
   </div>

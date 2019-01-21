@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import ChargeIndex from '@/components/ChargeIndex'
-import About from '@/components/About'
+import AboutContactUs from '@/components/AboutContactUs'
+import AboutCommpany from '@/components/AboutCommpany'
 
 Vue.use(Router)
 
@@ -13,9 +14,14 @@ export default new Router({
       component: ChargeIndex
     },
    {
-      path: '/about',
-      name: 'About',
-      component: About
+      path: '/about-contact-us',
+      name: 'AboutContactUs',
+      component: AboutContactUs
+    },
+   {
+      path: '/about-commpany',
+      name: 'AboutCommpany',
+      component: AboutCommpany
     }
   ]
 })
