@@ -2,10 +2,10 @@
   <div class="container">
   <div class="about-contact-us">
     <div class="item">
-      <label>公司名称：</label><span>上海黑壳信息科技有限公司</span>
+      <label>公司名称：</label><span>上海**信息科技有限公司</span>
     </div>
     <div class="item">
-      <label>地址：</label><span>上海市嘉定区江桥镇华江路129弄6号楼2240室</span>
+      <label>地址：</label><span>上海市**号楼2240室</span>
     </div>
     <div class="item">
       <label>电话：</label><span>136****3658</span>

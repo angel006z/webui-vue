@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import ChargeIndex from '@/components/ChargeIndex'
-import AboutContactUs from '@/components/AboutContactUs'
-import AboutCommpany from '@/components/AboutCommpany'
+import ChargeIndex from '@/components/charge-index'
+import AboutContactUs from '@/components/about-contact-us'
+import AboutCommpany from '@/components/about-commpany'
 
 Vue.use(Router)
 

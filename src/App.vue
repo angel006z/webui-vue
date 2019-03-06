@@ -7,10 +7,10 @@
 </template>
 
 <script>
-  import Header from './components/Header'
+  import Header from './components/header'
   import './css/normalize.min.css'
   import './css/charge.css'
-  import Footer from './components/Footer'
+  import Footer from './components/footer'
 
   export default {
     name: 'App',

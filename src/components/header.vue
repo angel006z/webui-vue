@@ -5,9 +5,9 @@
         <img class="logo" src="../img/logo.png" />
       </a>
         <ul class="nav">
-          <li><router-link to="/">首页</router-link></li>
-          <li><router-link to="/about-commpany" style="width: 80px;">公司介绍</router-link></li>
-          <li><router-link to="/about-contact-us" style="width: 80px;">关于我们</router-link></li>
+          <li v-bind:class="activeNumber === 0 ? 'active' : ''" v-on:click="activeNumber=0"><router-link to="/">首页</router-link></li>
+          <li v-bind:class="activeNumber === 1 ? 'active' : ''" v-on:click="activeNumber=1"><router-link to="/about-commpany" style="width: 80px;">公司介绍</router-link></li>
+          <li v-bind:class="activeNumber === 2 ? 'active' : ''" v-on:click="activeNumber=2"><router-link to="/about-contact-us" style="width: 80px;">关于我们</router-link></li>
         </ul>
       <div class="right">
          <div class="user">
@@ -33,7 +33,9 @@
     export default {
         name: "Header",
       data:function () {
+        // data 选项是一个函数，组件不相互影响
         return {
+          activeNumber: 0,
           isLogin: false
         }
       }

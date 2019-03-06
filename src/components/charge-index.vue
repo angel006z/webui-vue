@@ -34,8 +34,8 @@
 
 <script>
 
-  import ChargeChannel from './ChargeChannel'
-  import Money from './Money'
+  import ChargeChannel from './charge-channel'
+  import Money from './money'
 
   export default {
     name: 'ChargeIndex',
