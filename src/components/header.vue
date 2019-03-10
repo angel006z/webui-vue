@@ -55,7 +55,7 @@
     border-bottom: #e3e3e3 1px solid;
   }
   .header{
-    width: 980px;
+    width: 1200px;
     margin: 0 auto;
     overflow: hidden;
   }

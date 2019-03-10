@@ -1,6 +1,6 @@
 *{padding: 0;margin:0;}
 body{
-  background: rgb(244,244,244);
+  background: #f8f8f8;
 }
 ul, ol {
   list-style: none;
@@ -10,6 +10,11 @@ ul, ol {
 a{
   text-decoration: none;
 }
+.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}.clearfix{*zoom:1}
+
+.wrapper{
+  background: #fafafa;
+}
 .container {
   width: 980px;
   margin: 0 auto;
@@ -18,79 +23,32 @@ a{
   min-height: 500px;
 }
 
-.container .container-title {
-  height: 40px;
-  line-height: 40px;
-}
-
-.container .container-title h2 {
-  font-size: 24px;
-  float: left;
-  margin: 0 30px 0 0;
-  color: #333;
-}
-
-.container .container-title .info {
-  font-size: 16px;
-  float: left;
-  line-height: 35px;
-  color: #787878;
-}
-
-.container .container-title .number {
-  color: #1cd388;
-}
-
-.container-main {
-  border: 1px solid #ececec;
+.container-main{
+  border: 1px solid #eee;
   background-color: #fff;
-  position: relative;
-  min-height: 440px;
-  padding: 20px 5px;
-}
-
-.container-main .item-money {
-  padding: 20px 5px;
-}
-
-.container-main .item-money .item-title {
-  display: inline-block;
-  width: 157px;
-  text-align: right;
-  color: #3c3c3c;
-}
-
-.container-main .item-ratio {
-  padding: 20px 5px;
-}
-
-.container-main .item-ratio .item-title {
-  display: inline-block;
-  width: 157px;
-  text-align: right;
-  color: #3c3c3c;
-}
-
-.container-main .item-ratio .desc {
-  color: #787878;
+  min-height: 580px;
   font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
-
-.container-main .item-channel {
-  padding: 20px 5px;
+.container-main .row{
+  padding: 15px 0;
 }
-
-.container-main .item-channel .item-title {
-  display: inline-block;
-  width: 157px;
+.container-main .row .title {
+  width: 300px;
   text-align: right;
-  color: #3c3c3c;
+  float: left;
+  color: #959595;
 }
-
-.container-main .item-confirm button {
+.container-main .row .content {
+  width: 600px;
+  padding-left: 20px;
+  text-align: left;
+  float: left;
+}
+.container-main .row .confirm-charge{
   line-height: 36px;
   border-radius: 4px;
-  color: #787878;
   outline: 0;
   vertical-align: middle;
   text-align: center;
@@ -102,47 +60,29 @@ a{
   color: #fff;
 }
 
-.container-main .item-confirm .item-title {
-  display: inline-block;
-  width: 157px;
-  text-align: right;
-  color: #3c3c3c;
-}
-
-.container-main .item-tips {
-
-}
-
 
 .charge-money {
-  height: 47px;
-  display: inline-block;
-  vertical-align: middle;
+  margin-left: -7px;
 }
 
 .charge-money li {
   float: left;
-  margin-right: 10px;
-  text-align: center
-}
-
-.charge-money li.last-li {
-  margin-right: 0
-}
-
-.charge-money li a {
-  display: block;
-  border: 2px solid #f0f0f0;
-  background-color: #f0f0f0;
-  color: #787878;
-  width: 82px;
-  height: 47px;
+  width: 120px;
+  margin: 7px;
+  padding: 8px;
+  border: 1px solid #d7d7d7;
   border-radius: 3px;
-  line-height: 43px
+  text-align: center;
+  cursor: pointer;
+}
+.charge-money li a {
+  color:#000000;
+  line-height: 40px;
+  height: 40px;
 }
 
-.charge-money li a:hover {
-  border: 2px solid #1cd388;
+.charge-money li:hover {
+  border: 1px solid #1cd388;
   background-color: #fff
 }
 .charge-money .price-tip img {
@@ -150,99 +90,27 @@ a{
   vertical-align: top
 }
 
-.charge-money li.active a {
-  border: 2px solid #1cd388;
-  background: url(../img/icon_v1.png) -67px -162px no-repeat #fff;
-  line-height: 43px;
+.charge-money li.active {
+  border: 1px solid #1cd388;
+  background: url(../img/icon_v1.png) -13px -153px no-repeat #fff;
   color: #333;
 }
-.input-group {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  transition: width ease-out 200ms;
-  -webkit-transition: width ease-out 200ms;
-  -moz-transition: width ease-out 200ms;
-  height: 30px;
-  border-radius: 4px;
-  border: 1px solid #e0e0e0;
+.charge-money .item .amount,.charge-money .item .price {
+  display: block;
+}
+.charge-money .item .custom .amount{
+  line-height: 20px;
+  height: 20px;
 }
 
- .input-group {
-  width: 260px;
-  height: 30px;
-}
-.charge-money .input-group {
-   border: 1px solid #d2d2d2;
-   color: #787878;
-   width: 192px;
-   height: 47px;
- }
-.charge-money li.error a,.charge-money li.error .input-group {
-  border: 2px solid #fb3838;
-  background: 0 0;
-  line-height: 41px
-}
-.charge-money .input-group {
-  border: 1px solid #d2d2d2;
-  color: #787878;
-  width: 192px;
-  height: 47px
-}
 
-.charge-money li.error a, .charge-money li.error .input-group {
-  border: 2px solid #fb3838;
-  background: 0 0;
-  line-height: 41px
-}
-
-.charge-money .input-group input {
-  padding-left: 12px;
-  border: none;
+.charge-custom input{
+  text-align: center;
   outline: 0;
-  background-color: #f0f0f0;
-  font-size: 14px;
-  border-radius: 3px
+  border: 1px solid #d7d7d7;
+  width: 100px;
+  height: 32px;
 }
-
-.charge-money li.active .input-group input {
-  padding-left: 10px;
-  background-color: #fff;
-  color: #333;
-  border: 2px solid #1cd388
-}
-
-.charge-money li.error .input-group input {
-  color: #787878 !important;
-  border: 2px solid red !important;
-  background: 0 0 !important
-}
-
-.charge-money li input:hover {
-  background-color: #fff;
-  border: 2px solid #1cd388;
-  padding-left: 10px
-}
-
-.charge-money li .input-group .addon {
-  height: 47px;
-  line-height: 47px;
-  padding-right: 16px
-}
-
-.charge-money li.active .input-group .addon {
-  line-height: 45px;
-  padding-right: 15px;
-  background: url(../img/icon_v1.png) -115px -164px no-repeat
-}
-
-.charge-money li.error .input-group .addon {
-  line-height: 45px;
-  padding-right: 15px;
-  background: 0 0
-}
-
-
 
 
 .charge-channel {
@@ -251,164 +119,21 @@ a{
 }
 
 .charge-channel li {
-  background: url(../img/charge-channel.png) no-repeat;
-  width: 140px;
-  height: 60px;
-  text-indent: -9999px;
   float: left;
-  margin-right: 10px
-}
-
-.charge-channel li.weixin {
-  background-position: -140px 0;
-  position: relative
-}
-
-.charge-channel li.yeepay {
-  background-position: -560px 0;
-  width: 190px
-}
-
-.charge-channel li.paynowzs {
-  background-position: -750px 0;
-  width: 190px;
-  position: relative
-}
-
-
-.charge-channel li.paypal {
-  background: 0 0;
-  position: relative;
-  margin-right: 0;
-  width: 190px;
-  text-indent: 0
-}
-
-.charge-channel li.paypal div {
-  width: 190px;
-  margin-bottom: 11px;
-  height: 60px;
-  text-align: center
-}
-
-.charge-channel li.paypal .paypal-logo:hover {
-  cursor: pointer;
-  border: 1px solid #1cd388
-}
-
-.charge-channel li.paypal .paypal-logo {
-  color: #111;
-  background-color: #fff;
-  border-radius: 4px;
-  overflow: hidden;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border: 1px solid #d2d2d2
-}
-
-.charge-channel li.paypal .paypal-logo.active {
-  display: block;
-  border: 2px solid #1cd388;
-  background-color: #fff;
-  background-image: url(/img/icon_v1.png);
-  background-repeat: no-repeat;
-  background-position: 36px -154px
-}
-
-.charge-channel li.paypal .paypal-logo img {
-  height: 28px;
-  display: inline-block;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%)
-}
-
-.charge-channel li.paynowzs .cut-off {
-  position: absolute;
-  width: 39px;
-  height: 33px;
-  right: 0;
-  top: 0;
-  background: url(/img/cutoff.png) center no-repeat
-}
-
-.charge-channel li .cut-off-tip {
-  position: absolute;
-  font-size: 12px;
-  color: #88978d;
-  padding: 0;
-  margin: 0;
-  top: 62px;
-  left: 0;
-  text-indent: 0;
-  text-align: center
-}
-
-.charge-channel li.weixin .cut-off-tip {
-  width: 140px
-}
-
-.charge-channel li.paynowzs .cut-off-tip {
-  width: 190px
-}
-
-.charge-channel li.paypal .cut-off-tip {
-  width: 140px;
-  top: 62px;
-  left: 50%;
-  transform: translateX(-50%)
-}
-
-.charge-channel li.alipay {
-  position: relative
-}
-
-.charge-channel li.alipay .redpack {
-  position: absolute;
-  width: 39px;
-  height: 33px;
-  right: 0;
-  top: 0;
-  background: url(/img/alipay.png) center no-repeat
-}
-
-.charge-channel li.alipay .redpack-tip {
-  position: absolute;
-  font-size: 12px;
-  color: #88978d;
-  padding: 0;
-  margin: 0;
-  bottom: -20px;
-  left: 0;
-  text-indent: 0;
-  width: 140px;
-  text-align: center
-}
-
-.charge-channel li.unionpay {
-  background-position: -280px 0
-}
-
-.charge-channel li.kuaiqian {
-  background-position: -420px 0
-}
-
-.charge-channel li a {
-  display: block;
-  height: 95%;
+  width: 120px;
+  margin: 7px;
+  padding: 8px;
+  border: 1px solid #d7d7d7;
   border-radius: 3px;
-  outline: 0
+  text-align: center;
+  cursor: pointer;
 }
-
-.charge-channel li.active a {
-  display: block;
-  border: 2px solid #1cd388;
-  background: url(../img/icon_v1.png) -13px -151px no-repeat
+.charge-channel li.active {
+  border: 1px solid #1cd388;
+  background: url(../img/icon_v1.png) -13px -151px no-repeat #fff;
+  color: #333;
 }
-
-.charge-channel .active_paynowzs a,  .charge-channel .active_yeepay a {
-  background: url(../img/icon_v1.png) 38px -154px no-repeat rgba(0, 0, 0, 0);
-  border: 2px solid #1cd388;
-  display: block
+.charge-channel li:hover {
+  border: 1px solid #1cd388;
+  background-color: #fff
 }
