@@ -37,7 +37,7 @@
       <div class="row clearfix">
         <div class="title">&nbsp;</div>
         <div class="content">
-          <button class="confirm-charge">确认充值</button>
+          <button class="confirm-charge" v-on:click="confirmCharge">确认充值</button>
         </div>
       </div>
     </div>
@@ -51,7 +51,12 @@
 
   export default {
     name: 'ChargeIndex',
-    components: {Money, ChargeChannel}
+    components: {Money, ChargeChannel},
+    methods:{
+      confirmCharge:function () {
+          alert("confirmCharge");
+      }
+    }
   }
 </script>
 
